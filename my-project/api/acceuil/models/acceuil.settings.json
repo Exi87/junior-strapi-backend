@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acceuils",
+  "info": {
+    "name": "Acceuil",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slider1text": {
+      "type": "string"
+    },
+    "sliderimage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "SecondeTextTitle": {
+      "type": "string"
+    },
+    "SecondeTextDescription": {
+      "type": "string"
+    },
+    "SecondeImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

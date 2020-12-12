@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apropos",
+  "info": {
+    "name": "Apropos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "covertext": {
+      "type": "string"
+    },
+    "coverimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "abaout1content": {
+      "type": "string"
+    },
+    "about2content": {
+      "type": "string"
+    },
+    "about3content": {
+      "type": "string"
+    },
+    "aboutimage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

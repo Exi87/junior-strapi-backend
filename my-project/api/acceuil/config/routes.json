@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/acceuils",
+      "handler": "acceuil.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acceuils/count",
+      "handler": "acceuil.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acceuils/:id",
+      "handler": "acceuil.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/acceuils",
+      "handler": "acceuil.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/acceuils/:id",
+      "handler": "acceuil.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/acceuils/:id",
+      "handler": "acceuil.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
