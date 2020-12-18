@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/header-logo-2",
+      "handler": "header-logo2.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/header-logo-2",
+      "handler": "header-logo2.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/header-logo-2",
+      "handler": "header-logo2.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

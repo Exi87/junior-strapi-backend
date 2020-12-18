@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_logos",
+  "info": {
+    "name": "header-logo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "link1": {
+      "type": "string"
+    }
+  }
+}

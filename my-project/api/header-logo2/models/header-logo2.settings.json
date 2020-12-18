@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_logo2s",
+  "info": {
+    "name": "Header-logo2"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cloudimage2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "textcloud": {
+      "type": "string"
+    }
+  }
+}
