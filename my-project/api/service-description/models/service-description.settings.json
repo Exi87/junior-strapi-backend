@@ -1,0 +1,97 @@
+{
+  "kind": "singleType",
+  "collectionName": "service_descriptions",
+  "info": {
+    "name": "ServiceDescription",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "coverImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "coverText": {
+      "type": "string"
+    },
+    "fashionImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "fashionTitle": {
+      "type": "string"
+    },
+    "fashionDescription": {
+      "type": "text"
+    },
+    "portraitImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "portraitTitle": {
+      "type": "string"
+    },
+    "portraitDescription": {
+      "type": "richtext"
+    },
+    "mariageImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "mariageTitle": {
+      "type": "string"
+    },
+    "mariageDescription": {
+      "type": "richtext"
+    },
+    "eventImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "eventTitle": {
+      "type": "string"
+    },
+    "eventDescription": {
+      "type": "richtext"
+    }
+  }
+}

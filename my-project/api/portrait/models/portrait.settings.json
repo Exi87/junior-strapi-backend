@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "portraits",
+  "info": {
+    "name": "Portrait"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "portraitImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "portraitTitle": {
+      "type": "string"
+    },
+    "portraitDescription": {
+      "type": "richtext"
+    }
+  }
+}
